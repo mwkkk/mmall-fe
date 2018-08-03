@@ -4,7 +4,7 @@
   "description": "a happy mmall-fe",
   "main": "index.js",
   "scripts": {
-    "dev": "set WEBPACK_ENV = env && webpack-dev-server --inline --port 8088",
+    "dev": "set WEBPACK_ENV = env && webpack-dev-server --inline --port 5500",
     "dist": "set WEBPACK_ENV = online && webpack -p"
   },
   "repository": {
@@ -28,5 +28,8 @@
     "webpack": "^1.15.0",
     "webpack-dev-server": "^1.16.5"
   },
-  "dependencies": {}
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "hogan.js": "^3.0.2"
+  }
 }
