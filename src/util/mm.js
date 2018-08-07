@@ -16,7 +16,7 @@ var _mm = {
                 if(0 === res.status) {
                     typeof param.success ==='function' && param.success(res.data, res.msg);
                 }else if(10 ===res.status) {
-                    _this.dologin();
+                    _this.doLogin();
                 }else if(1 ===res.status) {
                     typeof param.error ==='function' && param.error(res.msg);
                 }
@@ -41,10 +41,10 @@ var _mm = {
         return result;
     },
     successTips: function(msg) {
-        alert('msg' || '操作成功！');
+        alert( msg || '操作成功！');
     },
     errorTips: function(msg) {
-        alert('msg' || '操作失败');
+        alert( msg || '操作失败');
     },
     validate: function(value, type) {
         var value = $.trim(value);
@@ -59,7 +59,7 @@ var _mm = {
         }
     },
     doLogin: function() {
-        window.location.href = './login.html?redirect=' + encodeURIComponent(window.location.href);
+        window.location.href = './user-login.html?redirect=' + encodeURIComponent(window.location.href);
     },
     goHome: function() {
         window.location.href = './index.html';

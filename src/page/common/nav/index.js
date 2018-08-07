@@ -17,7 +17,7 @@ var nav = {
         });
         //点击注册
         $('.js-register').click(function(){
-            window.loaction.href = './register.html';
+            window.loaction.href = './user-register.html';
         });
         //退出按钮
         $('.js-logout').click(function(){
